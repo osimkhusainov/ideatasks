@@ -1,0 +1,118 @@
+.rent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 26px 64px;
+    &__title {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: none;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        line-height: 120%;
+        margin: 0;
+    }
+    &__whatever{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        appearance: none;
+        width: 218px;
+        background: url('../img/icons/Vectordown.svg') no-repeat top 60%  right;
+        outline: 0;
+        border: none;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 40px;
+        color: $blue-color;
+        padding-left: 15px;
+        cursor: pointer;
+    }
+    &__add-new {
+        display: flex;
+        align-items: center;
+    }
+    &__addlink {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        color: $blue-color;
+        line-height: 140%;
+        padding-right: 20px;
+    }
+    &__plus {
+        text-decoration: none;
+        position: relative;
+        height: 48px;
+        width: 48px;
+        background: $blue-color;
+        border-radius: 16px;
+    }
+    &__span {
+        position: absolute;
+        top: 9%;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: auto;
+        font-size: 30px;
+        font-weight: 100;
+        color: #fff;
+    }
+
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+    &__item {
+        display: flex;
+        max-width: 373px;
+        max-height: 164px;
+        background: #FCFCFC;
+        border-radius: 32px;
+        margin-bottom: 32px;
+        padding: 34px 32px;
+        cursor: pointer;
+        &:hover {
+            border: 2px solid $blue-color;
+        }
+    }
+    &__descr {
+        margin-left: 24px;
+        margin-top: 15px;
+    }
+    &__title {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 14px;
+        margin-bottom: 12px;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 148%;
+        color: $main-color;
+        margin-bottom: 16px;
+    }
+    &__price {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 148%;
+        color: #F84AB3;
+        margin-bottom: 25px;
+    }
+}
+.hide {
+    display: none;
+}
+

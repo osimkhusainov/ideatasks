@@ -1,0 +1,306 @@
+@media (max-width: 1200px){
+    .pepelane {
+        padding: 0 20px;
+        &__uname, &__descr {
+            white-space: nowrap;
+        }
+        &__notifications{
+            padding-left: 50px;
+        }
+        &__text {
+            padding-left: 20px;
+        }
+    }
+    .container {
+        margin: 0 20px;
+    }
+    .content {
+        padding: 0 20px;
+        &__name {
+            white-space: nowrap;
+            margin: 0;
+        }
+        &__lot{
+            margin-left: 40px;
+        }
+        &__image {
+            width: 550px;
+            height: 600px;
+            margin-top: 50px;
+        }
+        &__specialists{
+            flex-wrap: wrap;
+        }
+        &__specialist{
+            margin-right: 5px;
+            margin-top: 10px;
+        }
+        &__price{
+            padding: 16px 16px;
+        }
+    }
+}
+@media (max-width: 991px){
+    .pepelane {
+        &__text {
+            display: none;
+        }
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .rent {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .products {
+        justify-content: space-around;
+        margin: 40px auto;
+    }
+    .content{
+        &__item {
+            flex-direction: column;
+        }
+        &__image{
+            margin-top: 0px;
+            width: 650px;
+            height: 700px;
+        }
+        &__img{
+            margin: auto;
+        }
+        &__name {
+            font-size: 30px;
+        }
+        &__lot{
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        &__conditions{
+            margin-bottom: 20px;
+        }
+        &__price{
+            margin: 40px auto;
+        }
+    }
+}
+@media (max-width: 767px){
+    .pepelane {
+        padding-left: 16px;
+        padding-right: 16px;
+        &__descr{
+            display: none;
+        }
+        &__uname {
+            display: none;
+        }
+        &__notifications{
+            padding-left: 19px;
+        }
+        &__profile {
+            margin-left: 0;
+            padding-left: 19px;
+        }
+        &__notif{
+            padding-left: 19px;
+        }
+    }
+    .container {
+        margin: 0;
+    }
+    .rent{
+        &__subtitle, &__whatever {
+            font-size: 30px;
+        }
+        &__whatever{
+            width: 170px;
+        }
+
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .content{
+        &__image{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 480px){
+    .pepelane {
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: space-between;
+        &__name {
+            font-size: 18px;
+        }
+        &__img{
+            width: 40px;
+            height: 40px;
+        }
+        &__avatar{
+            width: 40px;
+            height: 40px; 
+        }
+        &__reddot{
+            top: 17%;
+        }
+    }
+    .rent{
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        &__subtitle, &__whatever{
+            font-size: 24px;
+        }
+        &__whatever{
+            padding-left: 5px;
+            width: 130px;
+        }
+        &__addlink {
+            font-size: 16px;
+            margin: auto;
+            padding-right: 12px;
+        }
+        &__plus{
+            border-radius: 8px;
+            width: 32px;
+            height: 32px;
+        }
+        &__span {
+            font-size: 25px;
+            top: 0%;
+        }
+    }
+    .content{
+        position: relative;
+        padding: 0 16px 50px 16px;
+        &__name{
+            font-size: 24px;
+        }
+        &__lot {
+            margin-left: 0;
+        }
+        &__text{
+            margin-top: 20px;
+        }
+        &__title{
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        &__cup{
+            margin-top: 15px;
+        }
+        &__advantages {
+            margin-top: 15px;
+            margin-left: 16px;
+        }
+        &__price-title{
+            font-size: 16px;
+        }
+        &__price-btn{
+            width: 111px;
+            height: 44px;
+        }
+        &__features{
+            &::last-child(){
+                margin-bottom: 200px;
+            }
+        }
+        &__price{
+            position: fixed;
+            top: 80%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            padding: 12px 16px;
+            width: 343px;
+            height: 68px;
+            &::before{
+                position: absolute;
+                content: '';
+                top: -14.5%;
+                right: 2%;
+                width: 95%;
+                height: 10px;
+                background: linear-gradient(180deg, rgba(252, 252, 252, 0) 0%, #FCFCFC 100%);
+            }
+        }
+        &__specialists{
+            flex-direction: column;
+        }
+        &__specialist{
+            display: flex;
+            &-name, &-prof{
+                padding-left: 16px;
+            }
+            &-block{
+                margin-top: 15px;
+            }
+        }
+        &__about{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+    }
+}
+@media(max-width: 320px){
+    .pepelane {
+        &__name{
+            padding-left: 5px;
+        }
+        &__notif, &__profile, &__notifications{
+            padding-left: 13px;
+        }
+        &__reddot{
+            top: 20%;
+            left: 80%;
+        }
+    }
+    .rent{
+        padding-left: 10px;
+        padding-right: 10px;
+        &__subtitle, &__whatever{
+            font-size: 20px;
+        }
+        &__whatever{
+            width: 110px;
+        }
+        &__addlink{
+            font-size: 15px;
+        }
+    }
+    .products{
+        &__item{
+            padding: 30px 30px;
+        }
+        &__descr{
+            margin-top: 0;
+        }
+    }
+    .container{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .content{
+        &__price{
+            width: 295px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
+            &-title{
+                font-size: 15px;
+            }
+        }
+        &__descr, &__text, &__about, &__conditions-span{
+            font-size: 12px;
+        }
+        &__links-link{
+            font-size: 13px;
+        }
+    }
+}

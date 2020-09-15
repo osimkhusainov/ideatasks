@@ -1,0 +1,23 @@
+@import 'base/variables';
+
+*{
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Codec Pro', sans-serif;
+    padding-bottom: 64px;
+}
+.container {
+    max-width: 1231px;
+    margin: auto;
+    background: #F3F4F7;
+    border-radius: 48px;
+    padding: 35px 64px;
+}
+
+@import 'blocks/header';
+@import 'blocks/lots';
+@import 'blocks/specs';
+@import 'blocks/media'
